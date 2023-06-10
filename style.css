@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blur{
+    filter: blur(8px);
+    height: 100%; 
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+    width: full;
+    height: 1000px;
+    display: flex;
+    flex-direction: col;
+    background-color: palegreen;
+    margin: auto;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
+
+.layer{
+    display: flex;
+    justify-content:space-between;
+    height: 350px;
+    width: 800px;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.card{
+    background:transparent;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    width: 33%;
+    padding: 9px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.card h3{
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    font-style:normal;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.card p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+
+.set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.set label{
+    margin-left: 10px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.set input{
+    margin-right: 30px;
+    padding: 2px;
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    font-style: italic;
+}
