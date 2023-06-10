@@ -85,13 +85,13 @@
     left: 5px;
 }
 
-#Hourhand, #Minhand, #Sechand{
+.Hourhand, .Minhand, .Sechand{
     position: absolute;
     background: rgb(224, 0, 0);
     transform-origin: bottom;
 }
 
- #Hourhand{
+ .Hourhand{
     height: 22%;
     width: 2%;
     left: 49%;
@@ -101,7 +101,7 @@
 } 
 
 
-#Minhand{
+.Minhand{
     height: 29%;
     width: 2%;
     left: 49%;
@@ -111,7 +111,7 @@
 }
 
 
-#Sechand{
+.Sechand{
     height: 35%;
     width: 2%;
     left: 49%;
