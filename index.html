@@ -10,26 +10,57 @@
   <div class="container">
      <div class="layer">
 
-       <div class="card">
+       <div class="card" id="ucard">
         <h3>USA</h3>
         <p id="usa"> Text </p>
 
-        <div class="clock-container">
-          <div id="Hourhand" ></div>
-          <div id="Minhand"></div>
-          <div id="Sechand"></div>
+        <div class="ucontain" id="u">
+          <div id="Hourhandu" class="Hourhand" ></div>
+          <div id="Minhandu" class="Minhand"></div>
+          <div id="Sechandu" class="Sechand"></div>
         </div>
         
+        <div class="btn" >
+          <button id="ubtn" onclick="uopenit()" >Show / Hide Clock</button>
+         </div>
+
        </div>
 
-       <div class="card">
+       <div class="card" id="icard">
+
         <h3>India</h3>
+
         <p id="ind"> Text </p>
+
+        <div class="icontain" id="i">
+          <div id="Hourhandi" class="Hourhand" ></div>
+          <div id="Minhandi" class="Minhand"></div>
+          <div id="Sechandi" class="Sechand"></div>
+        </div>
+
+        <div class="btn">
+          <button onclick="iopenit()" id="ibtn">Show / Hide Clock</button>
+         </div>
+
        </div>
 
-       <div class="card">
+       <div class="card"  id="ccard">
+
         <h3>Canada</h3>
+
         <p id="can"> Text </p>
+
+        <div class="ccontain" id="c">
+          <div id="Hourhandc" class="Hourhand" ></div>
+          <div id="Minhandc" class="Minhand"></div>
+          <div id="Sechandc" class="Sechand"></div>
+        </div>
+
+        <div class="btn">
+          <button id="cbtn" onclick="copenit()">Show / Hide Clock</button>
+         </div>
+ 
+
        </div>
 
      </div>
